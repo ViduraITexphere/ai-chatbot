@@ -181,7 +181,8 @@
                 console.log("JSON Data to be sent:", jsonData);
 
                 const response = await fetch(
-                    "https://chatbot-transcript-server.vercel.app/save-transcript",
+                    // "https://chatbot-transcript-server.vercel.app/save-transcript",
+                    "https://ai-chatbot-henna-two.vercel.app/save-transcript",
                     {
                         method: "POST",
                         headers: {
@@ -274,8 +275,8 @@
             try {
                 const response = await fetch(
                     // `https://chatbot-backend-2.onrender.com/chat-history/${objectId}`,
-                    // `https://chatbot-transcript-server.vercel.app/chat-history/${objectId}`,
-                    `http://localhost:5000/chat-history/${objectId}`,
+                    `https://ai-chatbot-henna-two.vercel.app/chat-history/${objectId}`,
+                    // `http://localhost:5000/chat-history/${objectId}`,
                     {
                         method: "POST",
                         headers: {
@@ -330,7 +331,7 @@
 
                 try {
                     const response = await fetch(
-                        "http://localhost:5000/save-user-info",
+                        "https://ai-chatbot-henna-two.vercel.app/save-user-info",
                         {
                             method: "POST",
                             headers: {
